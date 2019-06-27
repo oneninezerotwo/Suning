@@ -1,0 +1,329 @@
+.fix-foot:before,.ranklist li:before {
+    border-color: #e8e8e8;
+    border-Top-width: 1px
+}
+.fix-foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 990
+}
+
+.fix-foot:before {
+    border-style: solid
+}
+
+
+
+.fix-foot ul li {
+    float: left;
+    width: 25%;
+    text-align: center
+}
+
+.fix-foot ul li a {
+    padding: 6px 0 4px;
+    display: block;
+    height: 40px
+}
+
+.fix-foot ul li a p {
+    margin-top: 2px;
+    color: #666;
+    font-size: 12px;
+    line-height: 20px
+}
+
+.fix-foot ul li img {
+    display: block;
+    margin: 0 auto;
+    height: 20px
+}
+.detail-body .fix-foot {
+    height: 55px
+}
+
+.detail-body .fix-foot .next {
+    width: 96px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    background: #39f;
+    border-radius: 4px;
+    margin: 7px 14px 0 0
+}
+
+.detail-body .fix-foot>dl {
+    float: left;
+    margin-top: 10px;
+    margin-left: 14px;
+    padding-right: 10px;
+    width: 38px;
+    overflow: hidden;
+    border-right: 1px solid #e8e8e8
+}
+
+.detail-body .fix-foot dd,.detail-body .fix-foot dt {
+    float: left;
+    text-align: center
+}
+
+.detail-body .fix-foot .cli-img {
+    position: relative;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle
+}
+
+.detail-body .fix-foot .cli {
+    margin-top: 2px;
+    font-size: 12px;
+    color: #1f86ed
+}
+
+.detail-body .fix-foot .price {
+    position: relative;
+    left: 10px;
+    top: 18px;
+    font-size: 17px;
+    color: #f60
+}
+
+.detail-body .ccon {
+    padding: 10px 0
+}
+
+.detail-body .ccon:before {
+    border-bottom-width: 1px;
+    border-color: #e8e8e8;
+    border-style: solid
+}
+
+.detail-body .ccon>p {
+    margin: 0 14px;
+    padding: 6px 0;
+    overflow: hidden
+}
+
+.detail-body .ccon .C3 {
+    float: left;
+    font-size: 13px;
+    color: #353d44;
+    max-width: 70%
+}
+
+.detail-body .ccon .C4 {
+    float: right;
+    font-size: 13px;
+    color: #353d44
+}
+
+.detail-body .ccon .look-detail {
+    font-size: 14px;
+    color: #39f
+}
+
+.detail-body .tab-con-line {
+    overflow: hidden
+}
+
+.detail-body .D {
+    margin: 4px 0 0;
+    padding: 8px 14px 0;
+    border-bottom: 1px solid #1f86ed;
+    width: 100%
+}
+
+.detail-body .D:before {
+    z-index: 0
+}
+
+.detail-body .D ul {
+    display: inline-block;
+    white-space: nowrap;
+    z-index: 99999
+}
+
+.detail-body .D li {
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+    padding: 7px 0;
+    width: 122.5px
+}
+
+.detail-body .D li.on {
+    position: relative;
+    bottom: -1px;
+    padding-top: 12px;
+    background-color: #fff;
+    border-top: 2px solid #1f86ed;
+    border-left: 1px solid #1f86ed;
+    border-right: 1px solid #1f86ed;
+    z-index: 9999
+}
+.detail2-body .fix-foot {
+    height: 55px
+}
+
+.detail2-body .fix-foot .next {
+    width: 96px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 17px;
+    text-align: center;
+    background: #ddd;
+    margin: 7px 14px 0 0;
+    border-radius: 4px;
+    color: #fff
+}
+
+.detail2-body .fix-foot .next.on {
+    color: #fff;
+    background: #39f
+}
+
+.detail2-body .fix-foot>dl {
+    float: left;
+    margin-top: 10px;
+    margin-left: 14px;
+    padding-right: 10px;
+    width: 38px;
+    overflow: hidden;
+    border-right: 1px solid #ddd
+}
+
+.detail2-body .fix-foot dd,.detail2-body .fix-foot dt {
+    float: left;
+    text-align: center
+}
+
+.detail2-body .fix-foot .cli-img {
+    position: relative;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle
+}
+
+.detail2-body .fix-foot .cli {
+    margin-top: 2px;
+    font-size: 12px;
+    color: #1f86ed
+}
+
+.detail2-body .fix-foot .price {
+    position: relative;
+    left: 10px;
+    top: 18px;
+    font-size: 17px;
+    color: #f60
+}
+.detail3-body .fix-foot {
+    height: 50px
+}
+
+.detail3-body .fix-foot>dl {
+    float: left;
+    margin-top: 10px;
+    margin-left: 16px;
+    padding-right: 10px;
+    width: 38px;
+    overflow: hidden;
+    border-right: 1px solid #e8e8e8
+}
+
+.detail3-body .fix-foot dd,.detail3-body .fix-foot dt {
+    float: left;
+    text-align: center
+}
+
+.detail3-body .fix-foot .cli-img {
+    position: relative;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle
+}
+
+.detail3-body .fix-foot .cli {
+    margin-top: 2px;
+    font-size: 12px;
+    color: #1f86ed
+}
+
+.detail3-body .fix-foot .price {
+    position: relative;
+    left: 10px;
+    top: 18px;
+    font-size: 17px;
+    color: #f60
+}
+
+.detail3-body .fix-foot .but1,.detail3-body .fix-foot .but2 {
+    display: inline-block;
+    float: right;
+    width: 92px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center
+}
+
+.detail3-body .fix-foot .but {
+    position: relative;
+    top: 8px;
+    font-size: 17px
+}
+
+.detail3-body .fix-foot .but2 {
+    color: #247CF0;
+    border-radius: 2px
+}
+
+.detail3-body .fix-foot .but2:before {
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    border-Top-width: 1px;
+    border-color: #247CF0;
+    border-style: solid;
+    border-radius: 2px
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .detail3-body .fix-foot .but2:before {
+        border-radius:4px
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3) {
+    .detail3-body .fix-foot .but2:before {
+        border-radius:6px
+    }
+}
+
+.detail3-body .fix-foot .but1 {
+    margin: 0 16px 0 10px;
+    color: #fff;
+    background: #247CF0;
+    border-radius: 2px
+}
+
+@media screen and (min-width: 320px) and (max-width:359px) {
+    .detail3-body .fix-foot .but {
+        font-size:14px
+    }
+
+    .detail3-body .fix-foot .but1,.detail3-body .fix-foot .but2 {
+        width: 82px
+    }
+
+    .detail3-body .fix-foot .but1 {
+        margin: 0 8px
+    }
+}

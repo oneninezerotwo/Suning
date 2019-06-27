@@ -1,0 +1,150 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 85px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 96px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 102.5px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 110px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 110px;
+  }
+}
+
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 113.07px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 128px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 160px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 215px;
+  }
+}
+
+a,
+div,
+header,
+span {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+blockquote,
+body,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+input {
+  box-shadow: none;
+  outline: 0;
+  resize: none;
+}
+
+a,
+button,
+img,
+input,
+textarea {
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+input,
+textarea {
+  -webkit-appearance: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  font-style: normal;
+}
+
+[data-href] {
+  cursor: pointer;
+}
+
+body {
+  font-size: 12px;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fbfbfb;
+  -webkit-overflow-scrolling: touch;
+  font-family: Arial, Helvetica, STHeiTi, sans-serif;
+}

@@ -1,0 +1,81 @@
+header.header-fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 300;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 0
+}
+
+header.header-common {
+    position: relative;
+    max-width: 750px;
+    z-index: 1000;
+    border-bottom: 1px solid #e8e8e8
+}
+
+header section {
+    display: -webkit-box;
+    height: 44px;
+    line-height: 44px;
+    background-color: #fff
+}
+
+header ul {
+    list-style: none
+}
+
+header .goback,header .goback1 {
+    display: inline-block;
+    width: 20px;
+    height: 21px;
+    margin-left: 18px;
+    margin-right: 5px;
+    margin-top: 12px;
+    font-weight: bolder;
+    cursor: pointer;
+    position: relative;
+    z-index: 2
+}
+
+header .goback1:before,header .goback:before {
+    content: " ";
+    position: relative;
+    top: 4px;
+    display: -webkit-box;
+    width: 10px;
+    height: 10px;
+    border-color: #4d545a;
+    border-style: solid;
+    border-width: 0 0 2px 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg)
+}
+
+header .title {
+    -webkit-box-flex: 1;
+    text-align: center;
+    font-size: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 70px
+}
+
+header .gomenu {
+    position: relative;
+    float: right
+}
+
+header .gomenu .btn {
+    margin-right: .14rem
+}
+
+header .gomenu .points-wrap {
+    width: 43px;
+    height: 44px
+}
