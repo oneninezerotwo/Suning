@@ -9,8 +9,8 @@ const style1 = {
 class InsIndexBanner extends React.Component {
     render() {
         return (
-            <div className="swiper-container" style={{ marginTop: '89px', ...style1 }}>
-                <div className="swiper-wrapper">
+            <div className="swiper-container m" style={{ marginTop: '89px', ...style1 }} >
+                <div className="swiper-wrapper m">
 
                     {
                         this.state.img.map((item, index) => {

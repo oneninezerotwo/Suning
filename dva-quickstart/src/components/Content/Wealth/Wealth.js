@@ -91,9 +91,9 @@ class Wealth extends React.Component {
                             </div>
                         </div>
                         <div className="index-insurance" floorcode={5}>
-                            <div className="index-insurance-title"> <a href className="title">保险无忧</a> </div>
+                            <div className="index-insurance-title"> <a className="title">保险无忧</a> </div>
                             <div className="index-insurance-content">
-                                <div className="ads" style={{ backgroundImage: 'url(https://image.suning.cn/uimg/sfp/ad/155378533289366345.png)' }}> <a href="https://issm.suning.com">
+                                <div className="ads" style={{ backgroundImage: 'url(https://image.suning.cn/uimg/sfp/ad/155378533289366345.png)' }}> <a>
                                     <div>有保障</div>
                                     <div>更安心</div>
                                 </a> </div>
@@ -134,7 +134,7 @@ class Wealth extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="index-payment" ><a href="https://jinrong.suning.com/wapbxyb1901bg.html" className="lazyimg"> <img alt="" className="item nobg" src="https://image.suning.cn/uimg/sfp/ad/155832014512272173.png" inm-original="https://image.suning.cn/uimg/sfp/ad/155832014512272173.png" /> </a> </div>
+                        <div className="index-payment" ><a className="lazyimg"> <img alt="" className="item nobg" src="https://image.suning.cn/uimg/sfp/ad/155832014512272173.png" inm-original="https://image.suning.cn/uimg/sfp/ad/155832014512272173.png" /> </a> </div>
                         <div className="index-news" >
                             <div className="index-news-title">金融资讯</div>
                             <div className="index-news-content">

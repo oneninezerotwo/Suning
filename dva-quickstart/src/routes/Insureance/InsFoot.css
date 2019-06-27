@@ -15,7 +15,9 @@
 .fix-foot:before {
     border-style: solid
 }
-
+.m{
+    height: 145px !important;
+}
 
 
 .fix-foot ul li {

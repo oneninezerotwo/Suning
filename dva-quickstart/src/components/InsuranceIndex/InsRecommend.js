@@ -45,7 +45,7 @@ class InsRecommend extends React.Component {
 
     render() {
         return (
-            <section className="recommend _reco_">
+            <section className="recommend _reco_ m">
                 <p className="title _aaa_">
                     <span className="rec">
                         为您推荐

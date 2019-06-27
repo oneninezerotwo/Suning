@@ -11,7 +11,7 @@ class InsHeader extends React.Component {
             <header className="header-fixed">
                 <section>
                     <div className="goback" onClick={this.back.bind(this)}><i></i></div>
-                    <div className="title">{this.state.title}</div>
+                    <div className="title" style={{ color: 'black' }}>{this.state.title}</div>
                     <div className="gomenu">
                         <div className="points-wrap" />
                     </div>

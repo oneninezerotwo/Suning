@@ -9,7 +9,7 @@ class Pesonality extends React.Component {
     state = {
         navData: [],
         youData: [],
-        routerName: ['银行', '保险', '零钱包', '福利中心', '/financial', '升级贷', '基金', '苏宁卡']
+        routerName: ['银行', '/Insurance', '零钱包', '福利中心', '/financial', '升级贷', '基金', '苏宁卡']
     }
 
     user() {

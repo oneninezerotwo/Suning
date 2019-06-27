@@ -19,7 +19,7 @@ class InsListProAll extends React.Component {
     render() {
 
         return (
-            <section className="con-list _con-list_" style={{ marginBottom: "50px" }}>
+            <section className="con-list _con-list_" style={{ marginBottom: "50px", marginTop: 129 }}>
                 <div className="list _list_">
                     {
                         this.props.home_store.insData.map((item, index) => {

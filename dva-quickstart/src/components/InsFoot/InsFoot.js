@@ -48,8 +48,8 @@ class InsFoot extends React.Component {
     }
     render() {
         return (
-            <section className="fix-foot" style={{ height: '50px' }}>
-                <ul ref="imgname">
+            <section className="fix-foot" style={{ height: '60px' }}>
+                <ul ref="imgname" style={{ height: '60px' }}>
                     {
                         this.state.turnlist.map((item, index) => {
                             return (
