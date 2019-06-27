@@ -7,16 +7,16 @@ import { connect } from 'react-redux'
 
 // let num = 1
 class Content extends React.Component {
-    
+
     render() {
         return (
             <div className="inm-gather-content">
                 <div className="inm-gather-layout" style={{ left: '0%' }}>
-                   
-                 {this.props.home_store.g_block?<Personality/>:<Wealth/>}
-                  
-                   
-                 
+
+                    {this.props.home_store.g_block ? <Personality /> : <Wealth />}
+
+
+
                 </div>
 
             </div>
@@ -25,6 +25,6 @@ class Content extends React.Component {
     }
 }
 
-export default connect((state)=>{
-   return state
+export default connect((state) => {
+    return state
 })(Content)

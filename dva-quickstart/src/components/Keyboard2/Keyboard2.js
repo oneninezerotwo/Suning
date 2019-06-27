@@ -12,13 +12,75 @@ class Keyboard2 extends React.Component {
         light: false
     }
     h_light(e) {
-        // e.nativeEvent.stopImmediatePropagation();
-        this.props.dispatch({
-            type:'login_store/key',
-            phone_num:this.props.login_store.phone_num+e.target.getAttribute("val")
-        })
+        switch (this.props.type) {
+            case "focus_isok1":
+                this.props.dispatch({
+                    type: 'login_store/key',
+                    phone_num: this.props.login_store.phone_num + e.target.getAttribute("val"),
+                    passworld_num: this.props.login_store.passworld_num
+                })
+                break;
+            case "focus_isok2":
+                this.props.dispatch({
+                    type: 'login_store/passworld',
+                    passworld_num: this.props.login_store.passworld_num + e.target.getAttribute("val"),
+                    phone_num: this.props.login_store.phone_num
+                })
+                break;
+            case "focus_isok3":
+                this.props.dispatch({
+                    type: 'login_store/key',
+                    phone_num: this.props.login_store.phone_num + e.target.getAttribute("val"),
+                    passworld_num: this.props.login_store.passworld_num
+
+                })
+                break;
+            case "focus_isok4":
+                this.props.dispatch({
+                    type: 'login_store/passworld',
+                    passworld_num: this.props.login_store.passworld_num + e.target.getAttribute("val"),
+                    phone_num: this.props.login_store.phone_num
+                })
+                break;
+            default:
+                break;
+        }
     }
-    
+    delete_num(e){
+
+        switch (this.props.type) {
+            case "focus_isok1":
+                this.props.dispatch({
+                    type: 'login_store/num_delete',
+                    phone_num: this.props.login_store.phone_num.substr(0,this.props.login_store.phone_num.length-1),
+                    passworld_num: this.props.login_store.passworld_num
+                })
+                break;
+            case "focus_isok2":
+                    this.props.dispatch({
+                        type: 'login_store/num_delete',
+                        phone_num: this.props.login_store.phone_num,
+                        passworld_num: this.props.login_store.passworld_num.substr(0,this.props.login_store.passworld_num.length-1)
+                    })
+                break;
+            case "focus_isok3":
+                    this.props.dispatch({
+                        type: 'login_store/num_delete',
+                        phone_num: this.props.login_store.phone_num.substr(0,this.props.login_store.phone_num.length-1),
+                        passworld_num: this.props.login_store.passworld_num
+                    })
+                break;
+            case "focus_isok4":
+                    this.props.dispatch({
+                        type: 'login_store/num_delete',
+                        phone_num: this.props.login_store.phone_num,
+                        passworld_num: this.props.login_store.passworld_num.substr(0,this.props.login_store.passworld_num.length-1)
+                    })
+                break;
+            default:
+                break;
+        }
+    }
     num_tangger() {
 
 
@@ -66,7 +128,7 @@ class Keyboard2 extends React.Component {
                         })
                     }
                     <div className="m-key delete">
-                        <div val="delete" className="val" onClick={this.h_light.bind(this)}/>
+                        <div val="delete" className="val" onClick={this.delete_num.bind(this)}/>
                     </div>
 
                 </div>
