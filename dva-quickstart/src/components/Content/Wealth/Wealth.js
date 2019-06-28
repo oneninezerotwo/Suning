@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Banner from '../Banner/Banner';
+import { withRouter } from 'dva/router';
+
 // import { Carousel, WingBlank } from 'antd-mobile';
 import ajax from '../../../utils/request';
 class Wealth extends React.Component {
@@ -10,7 +12,32 @@ class Wealth extends React.Component {
         newsData: [],
         giftData: []
     }
-
+    ins(index) {
+        var num = 0;
+        switch (index) {
+            case 0:
+                num = 4;
+                break;
+            case 1:
+                num = 1;
+                break;
+            case 3:
+                num = 2;
+                break;
+            case 5:
+                num = 3;
+                break;
+            default:
+                num = 0
+                break;
+        }
+        console.log(num)
+        this.props.dispatch({
+            type: "home_store/setchannelnum",
+            channelnum: num
+        })
+        this.props.history.push("/InsuranceList")
+    }
     async componentDidMount() {
         this.props.dispatch({
             type: 'home_store/loingShow',
@@ -26,7 +53,7 @@ class Wealth extends React.Component {
             newsData: data3.data.articleList.splice(0, 3),
             giftData: data4.data.sunCardList
         })
-        console.log(this.state.giftData)
+
         if (data && data2 && data3) {
             this.props.dispatch({
                 type: 'home_store/loingShow',
@@ -101,7 +128,7 @@ class Wealth extends React.Component {
 
                                     {/*保险无忧 */}
                                     {this.state.moneyData.map((item, index) => {
-                                        return <div className="inm-column lazyimg" key={index}>
+                                        return <div className="inm-column lazyimg" key={index} onClick={this.ins.bind(this, index)}>
                                             <div className="icon"><img alt="" src={item.picUrl} className="nobg" /></div>
                                             <div className="title">{item.name}</div>
                                         </div>
@@ -161,6 +188,6 @@ class Wealth extends React.Component {
         )
     }
 }
-export default connect((state) => {
+export default withRouter(connect((state) => {
     return state
-})(Wealth);
+})(Wealth));

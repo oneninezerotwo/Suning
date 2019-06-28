@@ -38,7 +38,7 @@ class InsListChannel extends React.Component {
                         <i className="blank" />
                         {/*<div class="btn"><span class="txt">筛选</span><i class="icon-filter"></i></div>*/}
                     </div>
-                    <ul className="choose-tab" style={{ padding: "50px 0 10px 0" }} ref="turncolor">
+                    <ul className="choose-tab" style={{ padding: "50px 0 10px 0 " }} ref="turncolor">
                         {/* {this.state.channelway.map((item, index) => {
                         return (<li key={index} id={"tab" + (index + 1)} className="on" >
                             <span>{item}</span>
