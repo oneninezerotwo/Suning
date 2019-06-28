@@ -126,14 +126,20 @@ class Login extends React.Component {
         if (this.props.login_store.phone_num !== "" && this.props.login_store.passworld_num !== "") {
             if (this.props.login_store.phone_num === sessionStorage.getItem("userPhone") && this.props.login_store.passworld_num === sessionStorage.getItem("userPassword")) {
                 this.props.history.push("/");
+                // this.props.history.go(-1)
+
             }
         }
     }
     //短信登录
     login_isok2() {
+
         if (this.props.login_store.phone_num !== "" && this.props.login_store.passworld_num !== "") {
             if (this.props.login_store.passworld_num === ranNum) {
                 this.props.history.push("/");
+
+                // this.props.history.go(-1)
+
                 sessionStorage.setItem('userPhone', this.props.login_store.phone_num)
             }
 

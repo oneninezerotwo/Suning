@@ -67,8 +67,8 @@ class InsIndexBanner extends React.Component {
             }
 
         ]
-        
-        ,wealth:[
+
+        , wealth: [
             {
                 imgurl: "https://image.suning.cn/uimg/sfp/ad/156094675357435541.png"
             },

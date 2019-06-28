@@ -9,6 +9,8 @@ import img5 from '../../assets/images/f-1-on.png';
 import img6 from '../../assets/images/f-2-on.png';
 import img7 from '../../assets/images/f-3-on.png';
 import img8 from '../../assets/images/f-4-on.png';
+import { withRouter } from 'dva/router';
+
 // import styles from '../../routes/Insureance/Insurance';
 class InsFoot extends React.Component {
     state = {
@@ -49,7 +51,7 @@ class InsFoot extends React.Component {
     render() {
         return (
             <section className="fix-foot" style={{ height: '60px' }}>
-                <ul ref="imgname" style={{ height: '60px' }}>
+                <ul ref="imgname" style={{ height: '60px' }} >
                     {
                         this.state.turnlist.map((item, index) => {
                             return (
@@ -60,7 +62,7 @@ class InsFoot extends React.Component {
                                     {/* <a id={item.id}> */}
 
                                     <Link to={
-                                        { pathname: item.turnurl }
+                                        { pathname: index === 3 ? (sessionStorage.getItem("userPhone") ? item.turnurl : 'login') : item.turnurl }
                                     } id={item.id}>
                                         <img name={item.listname} src={(this.state.isturnbool === index) ? item.imgurlon : item.imgurl} alt="" />
                                         <p>{item.listname}</p>
@@ -76,18 +78,12 @@ class InsFoot extends React.Component {
 
         )
     }
-    // this.props.home_store.foot_num
+
     highlight(index2) {
-        // console.log(index2);
         this.setState({
             isturnbool: index2
         })
 
-        // this.props.dispatch({
-        //     type: "home_store/save_foot",
-        //     foot_num: index2
-        // })
-        // ii.imgurl = ii.imgurlon;
     }
     async componentDidMount() {
         var bkl = document.location.hash.split('#/')[1];
@@ -159,6 +155,6 @@ class InsFoot extends React.Component {
 // IndexPage.propTypes = {
 // };
 
-export default connect((state) => {
+export default withRouter(connect((state) => {
     return state
-})(InsFoot);
+})(InsFoot));

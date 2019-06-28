@@ -1,0 +1,262 @@
+
+.banner {
+    margin: .16rem .12rem
+}
+
+.banner img {
+    width: 100%
+}
+
+.img-all {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 .12rem;
+    margin-top: .32rem;
+    margin-bottom: .4rem;
+    font-size: 0
+}
+
+.img-left img {
+    width: 100%
+}
+
+.img-left {
+    padding-right: .045rem
+}
+
+.img-right {
+    padding-left: .045rem
+}
+
+.img-left,.img-right {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.img-right img {
+    width: 100%;
+    display: block
+}
+
+.img-right img:first-child {
+    margin-bottom: .08rem
+}
+
+.icon-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.icon-box-left,.icon-box-right {
+    width: 50%
+}
+
+.icon-box-part img {
+    display: block;
+    height: .25rem;
+    width: .25rem;
+    margin: 0 auto
+}
+
+.icon-box-part p {
+    font-size: .14rem;
+    color: #333;
+    text-align: center;
+    margin-top: .1rem
+}
+
+.title-theme {
+    padding: 0 .12rem
+}
+
+.title-theme p:first-child {
+    font-size: .2rem;
+    color: #333;
+    font-weight: 700
+}
+
+.title-theme p:nth-child(2) {
+    font-size: .12rem;
+    color: #999
+}
+
+.hotDt {
+    background-color: #fff;
+    margin-top: .1rem
+}
+
+.hotDt-product-title {
+    font-size: .14rem;
+    color: #333;
+    padding: .16rem 0 .1rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.hotDt-product {
+    margin-left: .12rem;
+    border-bottom: .01rem solid #e8e8e8;
+    padding-bottom: .16rem;
+    margin-right: .12rem;
+    padding-left: .12rem;
+    padding-right: .12rem;
+    padding-bottom: .12rem;
+    position: relative;
+    margin-bottom: .1rem;
+    box-shadow: 0 0 8px 1px #f2f3f6
+}
+
+.hotDt-product .menu-tip-num {
+    position: absolute;
+    border-radius: 0 0 0 .2rem;
+    color: #fff;
+    height: .2rem;
+    line-height: .2rem;
+    background-color: #ff8000;
+    font-weight: 700;
+    text-align: center;
+    top: 0;
+    right: 0;
+    width: .64rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: linear-gradient(-132deg,rgba(208,214,247,.4),rgba(105,129,178,.24));
+    background: rgba(105,129,178,.24)
+}
+
+.hotDt-product:first-child .menu-tip-num {
+    background-image: linear-gradient(left,#fd6669,#ec305d);
+    background: linear-gradient(90deg,#fd6669,#ec305d)
+}
+
+.hotDt-product:last-child {
+    border: none
+}
+
+.hotDt-product-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.hotDt-product-list-left {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-top: .1rem
+}
+
+@media screen and (max-width: 360px) {
+    .hotDt-product-list-left {
+        -webkit-box-flex:9;
+        -webkit-flex: 9;
+        -ms-flex: 9;
+        flex: 9
+    }
+}
+
+.hotDt-product-list-middle {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-top: .22rem;
+    text-align: center
+}
+
+@media screen and (max-width: 360px) {
+    .hotDt-product-list-middle {
+        -webkit-box-flex:8;
+        -webkit-flex: 8;
+        -ms-flex: 8;
+        flex: 8
+    }
+}
+
+.hotDt-product-list-right {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-top: .22rem;
+    text-align: right
+}
+
+@media screen and (max-width: 360px) {
+    .hotDt-product-list-right {
+        -webkit-box-flex:8;
+        -webkit-flex: 8;
+        -ms-flex: 8;
+        flex: 8
+    }
+}
+
+.hotDt-product-list-num {
+    font-size: .2rem;
+    height: .3rem;
+    line-height: .34rem;
+    font-weight: bolder
+}
+
+.hotDt-product-list-num em {
+    font-weight: bolder
+}
+
+.hotDt-product-list-num span {
+    font-size: .16rem
+}
+
+.hotDt-product-list-lvNum,.hotDt-product-list-people {
+    color: #333;
+    font-size: .16rem;
+    height: .18rem;
+    line-height: .18rem;
+    vertical-align: bottom;
+    font-weight: bolder
+}
+
+.hotDt-product-list-lvNum .for-unit,.hotDt-product-list-people .for-unit {
+    font-size: .14rem;
+    font-weight: bolder
+}
+
+.hotDt-product-list-former {
+    position: absolute;
+    top: .07rem;
+    font-size: .11rem;
+    color: #999;
+    line-height: .13rem;
+    text-decoration: line-through;
+    font-weight: 400
+}
+
+.hotDt-product-list-lvText,.hotDt-product-list-peNum,.hotDt-product-list-year {
+    font-size: .12rem;
+    color: #999;
+    margin-top: .03rem
+}
+
+.hotDt-product-btn {
+    height: .36rem;
+    line-height: .36rem;
+    color: #fff;
+    font-size: .15rem;
+    font-weight: 700;
+    text-align: center;
+    border-radius: .02rem;
+    background-image: linear-gradient(left,#247bef,#2161e0);
+    background: linear-gradient(90deg,#247bef,#2161e0);
+    margin: .2rem auto 0
+}

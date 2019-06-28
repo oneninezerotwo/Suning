@@ -79,6 +79,7 @@ class Keyboard1 extends React.Component {
                     phone_num: this.props.login_store.phone_num.substr(0, this.props.login_store.phone_num.length - 1),
                     passworld_num: this.props.login_store.passworld_num
                 })
+                console.log(this.props.login_store.phone_num)
                 break;
             case "focus_isok2":
 
@@ -129,7 +130,7 @@ class Keyboard1 extends React.Component {
                     </div>
                 </div>
                 <div className="m-oper">
-                    <div val="delete" className="m-oper-con m-delete" />
+                    <div val="delete" className="m-oper-con m-delete" onClick={this.delete_num.bind(this)} />
                     <div className="m-oper-con m-complete">完成</div>
                 </div>
             </div>
